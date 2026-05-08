@@ -8,7 +8,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
     :root {
       --bg:        #0a0a0a;
       --bg2:       #111111;
@@ -19,9 +18,7 @@
       --accent-dim:#1a2d4f;
       --tag-bg:    #181818;
     }
-
     html { scroll-behavior: smooth; }
-
     body {
       background: var(--bg);
       color: var(--text);
@@ -30,8 +27,6 @@
       line-height: 1.65;
       -webkit-font-smoothing: antialiased;
     }
-
-    /* ── Nav ─────────────────────────────────────────────────────── */
     nav {
       position: fixed;
       top: 0; left: 0; right: 0;
@@ -45,7 +40,6 @@
       backdrop-filter: blur(10px);
       border-bottom: 1px solid var(--border);
     }
-
     .nav-name {
       font-weight: 600;
       font-size: 14px;
@@ -53,9 +47,7 @@
       color: var(--text);
       text-decoration: none;
     }
-
     .nav-links { display: flex; gap: 2rem; list-style: none; }
-
     .nav-links a {
       color: var(--muted);
       text-decoration: none;
@@ -63,19 +55,14 @@
       font-weight: 500;
       transition: color 0.15s;
     }
-
     .nav-links a:hover { color: var(--text); }
-
-    /* ── Layout ──────────────────────────────────────────────────── */
     main {
       max-width: 700px;
       margin: 0 auto;
       padding: 0 1.5rem;
     }
-
     section { padding: 5rem 0 2rem; }
     section:first-of-type { padding-top: 8rem; }
-
     h2 {
       font-size: 11px;
       font-weight: 600;
@@ -84,8 +71,6 @@
       color: var(--accent);
       margin-bottom: 2rem;
     }
-
-    /* ── Hero ────────────────────────────────────────────────────── */
     .hero-name {
       font-size: clamp(2rem, 5vw, 2.8rem);
       font-weight: 600;
@@ -93,14 +78,12 @@
       letter-spacing: -0.02em;
       margin-bottom: 0.6rem;
     }
-
     .hero-title {
       font-size: 1.05rem;
       color: var(--muted);
       font-weight: 400;
       margin-bottom: 1.5rem;
     }
-
     .hero-location {
       display: flex;
       align-items: center;
@@ -109,15 +92,12 @@
       color: var(--muted);
       margin-bottom: 2rem;
     }
-
     .hero-location svg { opacity: 0.5; }
-
     .hero-links {
       display: flex;
       gap: 0.75rem;
       flex-wrap: wrap;
     }
-
     .btn {
       display: inline-flex;
       align-items: center;
@@ -129,39 +109,28 @@
       text-decoration: none;
       transition: background 0.15s, color 0.15s;
     }
-
     .btn-primary {
       background: var(--accent);
       color: #fff;
     }
-
     .btn-primary:hover { background: #6ba3ff; }
-
     .btn-outline {
       background: transparent;
       border: 1px solid var(--border);
       color: var(--muted);
     }
-
     .btn-outline:hover { border-color: #444; color: var(--text); }
-
-    /* ── About ───────────────────────────────────────────────────── */
     .about-text {
       color: #c8c8c8;
       line-height: 1.75;
     }
-
     .about-text p + p { margin-top: 1rem; }
-
-    /* ── Experience ──────────────────────────────────────────────── */
     .exp-list { display: flex; flex-direction: column; gap: 2.5rem; }
-
     .exp-item {
       display: grid;
       grid-template-columns: 1fr;
       gap: 0.3rem;
     }
-
     .exp-header {
       display: flex;
       justify-content: space-between;
@@ -170,38 +139,32 @@
       gap: 0.5rem;
       margin-bottom: 0.2rem;
     }
-
     .exp-company {
       font-weight: 600;
       font-size: 15px;
     }
-
     .exp-dates {
       font-size: 12px;
       color: var(--muted);
       white-space: nowrap;
     }
-
     .exp-role {
       font-size: 13px;
       color: var(--accent);
       font-weight: 500;
       margin-bottom: 0.6rem;
     }
-
     .exp-desc {
       color: #b0b0b0;
       font-size: 14px;
       line-height: 1.7;
     }
-
     .exp-tags {
       display: flex;
       flex-wrap: wrap;
       gap: 0.4rem;
       margin-top: 0.75rem;
     }
-
     .tag {
       background: var(--tag-bg);
       border: 1px solid var(--border);
@@ -212,20 +175,16 @@
       border-radius: 4px;
       letter-spacing: 0.02em;
     }
-
     .exp-divider {
       border: none;
       border-top: 1px solid var(--border);
       margin-top: 2.5rem;
     }
-
-    /* ── Skills ──────────────────────────────────────────────────── */
     .skills-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
       gap: 1rem;
     }
-
     .skill-group h3 {
       font-size: 11px;
       font-weight: 600;
@@ -234,40 +193,33 @@
       color: var(--muted);
       margin-bottom: 0.6rem;
     }
-
     .skill-group ul {
       list-style: none;
       display: flex;
       flex-direction: column;
       gap: 0.3rem;
     }
-
     .skill-group li {
       font-size: 13px;
       color: #c8c8c8;
     }
-
-    /* ── Contact ─────────────────────────────────────────────────── */
     .contact-block {
       background: var(--bg2);
       border: 1px solid var(--border);
       border-radius: 10px;
       padding: 2rem;
     }
-
     .contact-block p {
       color: #b0b0b0;
       margin-bottom: 1.5rem;
       font-size: 14px;
       line-height: 1.7;
     }
-
     .contact-links {
       display: flex;
       flex-direction: column;
       gap: 0.75rem;
     }
-
     .contact-link {
       display: flex;
       align-items: center;
@@ -277,9 +229,7 @@
       font-size: 13px;
       transition: color 0.15s;
     }
-
     .contact-link:hover { color: var(--text); }
-
     .contact-icon {
       width: 32px;
       height: 32px;
@@ -291,8 +241,6 @@
       justify-content: center;
       flex-shrink: 0;
     }
-
-    /* ── Footer ──────────────────────────────────────────────────── */
     footer {
       border-top: 1px solid var(--border);
       margin-top: 5rem;
@@ -301,8 +249,6 @@
       font-size: 12px;
       color: var(--muted);
     }
-
-    /* ── Responsive ──────────────────────────────────────────────── */
     @media (max-width: 480px) {
       nav { padding: 0 1rem; }
       .nav-links { gap: 1.25rem; }
@@ -312,7 +258,6 @@
   </style>
 </head>
 <body>
-
 <nav>
   <a class="nav-name" href="#top">Michael DiFrancisco</a>
   <ul class="nav-links">
@@ -322,10 +267,7 @@
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
-
 <main id="top">
-
-  <!-- ── Hero ───────────────────────────────────────────────────── -->
   <section id="hero">
     <p class="hero-title">Senior Software Engineer</p>
     <h1 class="hero-name">Michael<br>DiFrancisco</h1>
@@ -348,8 +290,6 @@
       </a>
     </div>
   </section>
-
-  <!-- ── About ──────────────────────────────────────────────────── -->
   <section id="about">
     <h2>About</h2>
     <div class="about-text">
@@ -372,12 +312,9 @@
       </p>
     </div>
   </section>
-
-  <!-- ── Experience ─────────────────────────────────────────────── -->
   <section id="experience">
     <h2>Experience</h2>
     <div class="exp-list">
-
       <div class="exp-item">
         <div class="exp-header">
           <span class="exp-company">Mastercard</span>
@@ -407,9 +344,7 @@
           <span class="tag">GoodData</span>
         </div>
       </div>
-
       <hr class="exp-divider" />
-
       <div class="exp-item">
         <div class="exp-header">
           <span class="exp-company">Booz Allen Hamilton</span>
@@ -433,9 +368,7 @@
           <span class="tag">GitLab CI</span>
         </div>
       </div>
-
       <hr class="exp-divider" />
-
       <div class="exp-item">
         <div class="exp-header">
           <span class="exp-company">Excella</span>
@@ -460,11 +393,8 @@
           <span class="tag">ASP.NET</span>
         </div>
       </div>
-
     </div>
   </section>
-
-  <!-- ── Skills ─────────────────────────────────────────────────── -->
   <section id="skills">
     <h2>Skills</h2>
     <div class="skills-grid">
@@ -472,10 +402,10 @@
         <h3>Languages</h3>
         <ul>
           <li>Java</li>
-          <li>TypeScript</li>
-          <li>JavaScript</li>
-          <li>SQL</li>
+          <li>Python</li>
           <li>C# / .NET</li>
+          <li>JavaScript / TypeScript</li>
+          <li>SQL</li>
         </ul>
       </div>
       <div class="skill-group">
@@ -500,6 +430,9 @@
         <h3>Data</h3>
         <ul>
           <li>PostgreSQL</li>
+          <li>MS SQL Server</li>
+          <li>Snowflake</li>
+          <li>AWS Neptune</li>
           <li>Neo4j</li>
           <li>GoodData</li>
         </ul>
@@ -510,6 +443,8 @@
           <li>Jenkins</li>
           <li>GitLab CI</li>
           <li>Docker</li>
+          <li>AWS CodeDeploy</li>
+          <li>AWS CloudFormation</li>
           <li>Helm</li>
           <li>PCF / OpenShift</li>
         </ul>
@@ -517,16 +452,14 @@
       <div class="skill-group">
         <h3>Practice</h3>
         <ul>
-          <li>Technical leadership</li>
           <li>Agile / Scrum</li>
+          <li>Technical leadership</li>
           <li>Code review</li>
           <li>Mentorship</li>
         </ul>
       </div>
     </div>
   </section>
-
-  <!-- ── Contact ────────────────────────────────────────────────── -->
   <section id="contact">
     <h2>Contact</h2>
     <div class="contact-block">
@@ -557,7 +490,6 @@
       </div>
     </div>
   </section>
-
 </main>
 
 <footer>
